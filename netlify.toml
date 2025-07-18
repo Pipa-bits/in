@@ -1,4 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "build/"
-  environment = { NODE_VERSION = "18.x" }
+  [build.environment]
+    NODE_VERSION = "18.17.1" # Versión específica que sí existe
